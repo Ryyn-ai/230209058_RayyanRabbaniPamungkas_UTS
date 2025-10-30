@@ -1,4 +1,15 @@
 package com.Siakad.exception;
+/**
+ * Exception yang dilempar ketika mata kuliah tidak ditemukan
+ */
 
-public class CourseNotFoundException {
+public class CourseNotFoundException extends RuntimeException {
+
+    public CourseNotFoundException(String message) {
+        super(message);
+    }
+
+    public CourseNotFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
